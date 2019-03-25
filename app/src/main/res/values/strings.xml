@@ -1,20 +1,31 @@
 <resources>
-    <string name="app_name">BiometricPrompt-Sample</string>
-
-    <string name="btn_authenticate">Login</string>
-
-    <string name="biometric_title">Login</string>
-    <string name="biometric_subtitle">Login to your Osta account</string>
-    <string name="biometric_description">Place your finger on the device home button to verify your identity</string>
-    <string name="biometric_negative_button_text">CANCEL</string>
-
-
-    <string name="biometric_error_sdk_not_supported">Sdk version not supported</string>
-    <string name="biometric_error_hardware_not_supported">Device does not support biometric authentication</string>
-    <string name="biometric_error_fingerprint_not_available">Fingerprint is not registered in device</string>
-    <string name="biometric_error_permission_not_granted">Permission is not granted by user</string>
-    <string name="biometric_failure">Login not successful!</string>
-    <string name="biometric_cancelled">Authentication cancelled by user</string>
-    <string name="biometric_success">Login Successful</string>
+    <string name="app_name">Best Cake Baker!</string>
+    <string name="btn_authenticate">Inscribirse</string>
+    <string name="biometric_title">Inscribase</string>
+    <string name="biometric_subtitle">Autentifiquese para inscribirse</string>
+    <string name="biometric_description">Ponga su dedo en el sensor para verificar su identidad</string>
+    <string name="biometric_negative_button_text">Cancelar</string>
+    <string name="biometric_error_sdk_not_supported">Version SDK no soportada</string>
+    <string name="biometric_error_hardware_not_supported">El dispositivo no soporta autenticacion biométrica</string>
+    <string name="biometric_error_fingerprint_not_available">No hay ninguna huella registrada</string>
+    <string name="biometric_error_permission_not_granted">Se necesita permiso del usuario</string>
+    <string name="biometric_failure">¡Fallo al inscribirse!</string>
+    <string name="biometric_cancelled">Autenticacion cancelada por el usuario</string>
+    <string name="biometric_success">Inscripcion completada</string>
+    <string name="lastname_hint">Apellidos</string>
+    <string name="name_hint">Nombre</string>
+    <string name="age_hint">Edad</string>
+    <string name="sign_button">Inscribirse</string>
+    <string name="header">Best Cake Baker!</string>
+    <string name="age_error">Debe ser mayor de edad para participar.</string>
+    <string name="lastname_error">Debe introducir un apellido.</string>
+    <string name="name_error">Debe introducir un nombre.</string>
+    <string name="sex_textview">Sexo</string>
+    <string name="sex_option_01">Hombre</string>
+    <string name="sex_option_02">Mujer</string>
+    <string name="veteran_text">¿Ha participado en alguna otra competición?</string>
+    <string name="contest_hint">Nombre de la competición.</string>
+    <string name="contest_error">Debe introducir el nombre de la competición.</string>
+    <string name="age_format_error">Debe introducir una edad válida.</string>
 
 </resources>

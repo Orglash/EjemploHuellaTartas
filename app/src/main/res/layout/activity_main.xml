@@ -1,15 +1,139 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent" android:layout_height="match_parent"
-    android:orientation="vertical">
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo_tartas">
 
-
-    <Button
-        android:id="@+id/btn_authenticate"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="60dp"
-        android:text="@string/btn_authenticate" />
+        android:orientation="vertical"
+        android:paddingHorizontal="20dp"
+        tools:context=".LoginActivity">
 
-</RelativeLayout>
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/tarta" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/starella"
+            android:text="@string/header"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            android:textSize="50dp"
+            android:textStyle="bold" />
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/layout_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:hint="@string/name_hint"
+            android:textColorHint="@color/text_login">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/layout_lastname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="@string/lastname_hint"
+            android:textColorHint="@color/text_login">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/lastname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/layout_age"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="@string/age_hint"
+            android:textColorHint="@color/text_login">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/age"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:singleLine="true" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="@string/sex_option_01"
+                android:textSize="15dp" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sex_option_02"
+                android:textSize="15dp" />
+
+        </RadioGroup>
+
+        <CheckBox
+            android:id="@+id/veteran"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/veteran_text"
+            android:textSize="15dp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/layout_contest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="@string/contest_hint"
+            android:textColorHint="@color/text_login">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/contest"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/sign"
+            android:background="@drawable/boton_redondo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="@string/sign_button"
+            android:textAllCaps="false"
+            android:textColor="@color/colorAccent"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_marginBottom="20dp"/>
+
+    </LinearLayout>
+</ScrollView>
